@@ -1,0 +1,306 @@
+@font-face {
+font-family:"DancingScript-Regular";
+src: url(DancingScript-Regular.otf);
+}
+body{
+  font-family: "DancingScript-Regular";
+  background-color:  #02010a;
+  margin: 0 auto;
+  animation: rebote 1s;
+}
+/* CABECERA
+-----------------------------------------------
+-----------------------------------------------*/
+header{
+  top: 0;
+  width: 100%;
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  text-shadow: 2px 2px 3px #02010a;
+  color: White;
+}
+@-webkit-keyframes rebote{
+0%{
+  margin-top: 150%;
+}
+60%{
+  margin-top: -5%;
+}
+100%{
+  margin-top: 0%;
+}
+}
+li{
+
+  display:inline-block;
+  padding: 5px;
+}
+
+/* MENU
+-----------------------------------------------
+-----------------------------------------------*/
+#cabecera{
+
+  width: 60%;
+
+}
+#menu-principal{
+  width: 30%;
+
+}
+a{
+  color: White;
+}
+#contenido{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+/* PIE DE PAGINA
+-----------------------------------------------
+-----------------------------------------------*/
+footer
+{
+    clear: both;
+    width: 100%;
+    border-radius:0px 0px 10px 10px;
+    background-color:#C6d5c5;
+    bottom: 0;
+}
+.contenedor{
+  float:left;
+  display:block;
+  text-align: center;
+  margin-top:20px;
+}
+.contenedor img{
+  width: 10%;
+  padding-right: 5px;
+  box-shadow:none;
+}
+.contenedor a{
+color: black;
+}
+/* CUERPO DE PAGINA
+-----------------------------------------------
+-----------------------------------------------*/
+h3{
+  padding-top: : 5px;
+}
+img{
+  box-shadow: 2px 2px 0px 0px rgb(2,1,10);
+}
+#principal{
+  flex-grow: 100%;
+  background-color: #82c3a6;
+}
+#izq{
+  background-color: #d5c75f;
+  border: 1px;
+  text-align: center;
+}
+#der{
+  background-color: #d5c75f;
+  border: 1px;
+  text-align: center;
+}
+/* trabajando con las imagenes del cuerpo index
+-----------------------------------------------
+-----------------------------------------------*/
+#principal img{
+  width: 90%;
+  margin: 5%;
+}
+
+#izq img{
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1%;
+  transition: transform 1s;
+}
+
+#der img{
+  width: 80%;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1%;
+  transition: transform 1s;
+}
+/* EFECTOS AL PASAR EL MOUSE EN LAS IMAGENES - INDEX
+-----------------------------------------------
+-----------------------------------------------*/
+#izq img:hover{
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 0px 0px rgb(130,195,166);
+}
+
+#der img:hover{
+  transform: translate(20px,-5px);
+  box-shadow: 2px 2px 0px 0px rgb(130,195,166);
+}
+
+/* MEDIA QUERIES DE 900PX A MAS
+-----------------------------------------------
+-----------------------------------------------*/
+@media (min-width:900px){
+  header{
+    height: 100px;
+  }
+  body{
+    max-width: 900px;
+  }
+  footer{
+    height: 200px;
+  }
+  .contenedor{
+      width: 25%;
+  }
+  #cabecera{
+    width: 60%;
+    float: left;
+    padding: 10px 0px 20px 40px;
+  }
+  #menu-principal{
+    width: 30%;
+    float:right;
+    padding: 10px 40px 15px 0px;
+  }
+  #principal{
+    width: 100%;
+    order: 1;
+    }
+  #izq{
+    width: 50%;
+    order: 2;
+    }
+  #der{
+    width: 50%;
+    order: 3;
+    }
+    .c1 {
+    	width: 33.3%;
+    }
+    .c2 {
+    	width: 33.3%;
+    }
+    .c3 {
+    	width: 33.3%;
+    }
+    .c4 {
+    	width: 33.3%;
+    }
+    .c5 {
+    	width: 33.3%;
+    }
+    .c6 {
+    	width: 33.3%;
+    }
+
+}
+/* MEDIA QUERIES MENOR A 900PX
+-----------------------------------------------
+-----------------------------------------------*/
+@media  (max-width:899px){
+  header{
+  text-align: center;
+    height: 150px;
+  }
+  h1{
+    padding: 10px 30px 0px 30px;
+  }
+  body{
+  max-width: 100%;
+  }
+  footer{
+  height: 800px;
+  }
+  .contenedor{
+    width: 100%;
+  }
+  #cabecera{
+    width: 100%;
+
+  }
+  #menu-principal{
+    width: 100%;
+  position:absolute;
+
+
+  }
+  #principal{
+    width: 100%;
+    order: 1;
+  }
+
+  #izq{
+    width: 100%;
+    order: 2;
+  }
+  #der{
+    width: 100%;
+    order: 3;
+  }
+  .c1 {
+  	width: 100%;
+  }
+  .c2 {
+  	width: 100%;
+  }
+  .c3 {
+  	width: 100%;
+  }
+  .c4 {
+  	width: 100%;
+  }
+  .c5 {
+  	width: 100%;
+  }
+  .c6 {
+  	width: 100%;
+  }
+
+}
+/* CODIGO PARA GALERIA PAGINA PAISAJE Y RETRATO
+-----------------------------------------------
+-----------------------------------------------*/
+
+.galeria{
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+  background-color: #d5c75f;
+}
+
+.galeria div {
+  box-sizing: border-box;
+  min-width: 150px;
+  width: auto%;
+}
+
+.galimg{
+  padding: 5%;
+  box-shadow: none;
+}
+.galimg1{
+  padding: 5%;
+  box-shadow: none;
+  -webkit-filter:blur;
+  filter: blur(10px);
+}
+.galimg2{
+  padding: 5%;
+  box-shadow: none;
+  -webkit-filter:grises;
+  filter: grayscale(100%);
+}
+.galimg3{
+  padding: 5%;
+  box-shadow: none;
+  -webkit-filter:grises;
+  filter: sepia(90%);
+}
